@@ -1,11 +1,25 @@
-# Sample Snack app
+# expo-dark-mode-switch
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+## Install
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+```sh
+yarn add expo-dark-mode-switch
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+# or
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
+npm install --save expo-dark-mode-switch
+```
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+### Example
+
+```tsx
+import * as React from 'react';
+import Switch from 'expo-dark-mode-switch';
+
+export default function App() {
+  const [value, setValue] = React.useState(true);
+  return <Switch value={value} onChange={value => setValue(value)} />;
+}
+```
+
+Based on a component from the home screen of [twizzle](https://twizzle.app/) by @kitze.

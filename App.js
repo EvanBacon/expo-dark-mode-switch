@@ -1,23 +1,7 @@
-import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
-
-import SolarSwitch from './SolarSwitch';
+import React from 'react';
+import Switch from './build';
 
 export default function App() {
   const [value, setValue] = React.useState(true);
-  return (
-    <View style={styles.container}>
-      <SolarSwitch value={value} onChange={() => setValue(!value)} />
-    </View>
-  );
+  return <Switch value={value} onChange={value => setValue(value)} />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-});
