@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to the Expo Dark Mode Switch 👋</h1>
+<h1 align="center">Welcome to the React Native Dark Mode Switch 👋</h1>
 
 <p align="center">
   <img align="center" alt="Product: demo" src="https://media.giphy.com/media/QZK2FgLG2odtMOSwkm/giphy.gif" />
@@ -30,18 +30,18 @@ Based on a component from the home screen of [twizzle](https://twizzle.app/) by 
 ## Install
 
 ```sh
-yarn add expo-dark-mode-switch && expo install react-native-svg
+yarn add react-native-dark-mode-switch && expo install react-native-svg
 
 # or
 
-npm install --save expo-dark-mode-switch && expo install react-native-svg
+npm install --save react-native-dark-mode-switch && expo install react-native-svg
 ```
 
 ### Example
 
 ```tsx
 import * as React from 'react';
-import Switch from 'expo-dark-mode-switch';
+import Switch from 'react-native-dark-mode-switch';
 
 export default function App() {
   const [value, setValue] = React.useState(true);
