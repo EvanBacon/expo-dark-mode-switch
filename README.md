@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to expo-dark-mode-switch 👋</h1>
+<h1 align="center">Welcome to the Expo Dark Mode Switch 👋</h1>
 
 <p align="center">
   <img align="center" alt="Product: demo" src="https://media.giphy.com/media/QZK2FgLG2odtMOSwkm/giphy.gif" />
@@ -30,11 +30,11 @@ Based on a component from the home screen of [twizzle](https://twizzle.app/) by 
 ## Install
 
 ```sh
-yarn add expo-dark-mode-switch
+yarn add expo-dark-mode-switch && expo install react-native-svg
 
 # or
 
-npm install --save expo-dark-mode-switch
+npm install --save expo-dark-mode-switch && expo install react-native-svg
 ```
 
 ### Example
