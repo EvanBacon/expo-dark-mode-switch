@@ -1,18 +1,14 @@
 // Based on https://twizzle.app/ by Kitze
-
 import React from 'react';
-import { View, Text, Platform, StyleSheet, Animated, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
-import {
-  useHover,
-  useActive
-} from 'react-native-web-hooks';
+import { Animated, Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
 import * as SVG from 'react-native-svg';
+import { useActive, useHover } from 'react-native-web-hooks';
+
 
 const width = 70;
 const circleWidth = 27;
 const sideOffset = 5;
 const transitionTime = '200ms';
-
 
 export default ({ onChange, value, ...props }) => (
   <View style={{ transform: [{ scale: 5 }] }}>
