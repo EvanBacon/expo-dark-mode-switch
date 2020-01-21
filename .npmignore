@@ -11,3 +11,8 @@ babel.config.js
 # Example
 /App.js
 /app.json
+.expo
+
+.eslintrc.js
+.eslintignore
+.prettierrc
