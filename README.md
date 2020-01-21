@@ -1,8 +1,6 @@
-# expo-dark-mode-switch
-
 <h1 align="center">Welcome to expo-dark-mode-switch 👋</h1>
 
-<img alt="Product: demo" src="https://media.giphy.com/media/QZK2FgLG2odtMOSwkm/giphy.gif" />
+<img align="center" alt="Product: demo" src="https://media.giphy.com/media/QZK2FgLG2odtMOSwkm/giphy.gif" />
 
 <p align="center">
   <a aria-label="made with expo" href="https://github.com/expo" target="_blank">
