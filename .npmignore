@@ -10,7 +10,7 @@ babel.config.js
 /tsconfig.json
 # Example
 /App.js
-/app.json
+/app.config.js
 .expo
 
 .eslintrc.js

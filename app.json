@@ -1,9 +1,0 @@
-{
-    "name": "Example",
-    "displayName": "Example",
-    "expo": {
-      "entryPoint": "expo/AppEntry",
-      "version": "0.1.0",
-      "platforms": ["web"]
-    }
-  }
