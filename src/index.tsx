@@ -16,7 +16,7 @@ export type Props = React.ComponentProps<typeof TouchableOpacity> & {
 };
 
 export default function Switch({ onChange, style, value, ...props }: Props) {
-  const onValueChange = React.useMemo(() => () => onChange(!value), [onChange]);
+  const onValueChange = React.useCallback(() => onChange(!value), [value, onChange]);
   return (
     <TouchableOpacity
       accessibilityRole="button"
