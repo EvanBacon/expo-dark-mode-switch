@@ -16,7 +16,10 @@ export type Props = React.ComponentProps<typeof TouchableOpacity> & {
 };
 
 export default function Switch({ onChange, style, value, ...props }: Props) {
-  const onValueChange = React.useMemo(() => () => onChange(!value), [onChange]);
+  const onValueChange = React.useCallback(() => onChange(!value), [
+    value,
+    onChange,
+  ]);
   return (
     <TouchableOpacity
       accessibilityRole="button"
@@ -41,6 +44,7 @@ const MoonIcon = ({ isClicked, ...props }) => {
     Animated.timing(value.current, {
       toValue: isClicked ? 1 : 0,
       duration: transitionTime,
+      useNativeDriver: false,
       easing: Easing.inOut(Easing.linear),
     }).start();
   }, [isClicked]);
@@ -102,6 +106,7 @@ const DayNightSwitch = ({ isClicked }) => {
     Animated.timing(value.current, {
       toValue: isClicked ? 1 : 0,
       duration: transitionTime,
+      useNativeDriver: false,
     }).start();
   }, [isHovered, isClicked]);
 
@@ -109,6 +114,7 @@ const DayNightSwitch = ({ isClicked }) => {
     Animated.timing(scaleValue.current, {
       toValue: isActive ? 1.03 : isHovered ? 1.05 : 1,
       duration: transitionTime,
+      useNativeDriver: false,
     }).start();
   }, [isActive, isHovered]);
 
@@ -145,6 +151,7 @@ const Star = ({ size = 3, x, y, index, isClicked, ...props }) => {
     Animated.timing(value.current, {
       toValue: isClicked ? 1 : 0,
       duration: 50 * index,
+      useNativeDriver: false,
     }).start();
   }, [isClicked]);
 
@@ -181,6 +188,7 @@ const Stars = ({ isClicked, ...props }) => {
     Animated.timing(value.current, {
       toValue: isClicked ? 1 : 0,
       duration: transitionTime,
+      useNativeDriver: false,
     }).start();
   }, [isClicked]);
 
@@ -215,6 +223,7 @@ const Circle = ({ isClicked, ...props }) => {
     Animated.timing(value.current, {
       toValue: isClicked ? 1 : 0,
       duration: transitionTime,
+      useNativeDriver: false,
     }).start();
   }, [isClicked]);
 
