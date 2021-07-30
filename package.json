@@ -46,7 +46,7 @@
     "expo": "~42.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-native": "~0.63.4",
+    "react-native": "~0.62.3",
     "react-native-web": "~0.13.12",
     "eslint": "^6.8.0",
     "expo-module-scripts": "~2.0.0",
