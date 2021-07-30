@@ -16,7 +16,7 @@ export type Props = React.ComponentProps<typeof TouchableOpacity> & {
 };
 
 export default function Switch({ onChange, style, value, ...props }: Props) {
-  const onValueChange = React.useMemo(() => () => onChange(!value), [onChange]);
+  const onValueChange = React.useCallback(() => onChange(!value), [onChange]);
   return (
     <TouchableOpacity
       accessibilityRole="button"
@@ -120,9 +120,9 @@ const DayNightSwitch = ({ isClicked }) => {
       ? '#5559cc'
       : '#79bfc3'
     : value.current.interpolate({
-        inputRange: [0, 1],
-        outputRange: ['#80c7cb', '#595dde'],
-      });
+      inputRange: [0, 1],
+      outputRange: ['#80c7cb', '#595dde'],
+    });
 
   return (
     <Animated.View
@@ -230,8 +230,8 @@ const Circle = ({ isClicked, ...props }) => {
   const backgroundColor = isClicked
     ? `rgba(255,255,255,${isHovered ? '0.3' : '0.4'})`
     : isHovered
-    ? '#fff0bb'
-    : '#fddf75';
+      ? '#fff0bb'
+      : '#fddf75';
   const borderColor = isClicked ? 'rgba(255,255,255,0.9)' : '#d6b05eb5';
 
   return (
